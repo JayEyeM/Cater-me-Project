@@ -18,7 +18,7 @@
             <td><label class="labels">Ingredient Name</label><br>
                     <input id="ingredientName" name="ingredient-name" placeholder="Enter Ingredient Name"/></td><br>
             <td><label class="labels">Quantity</label><br>
-                    <input id="amount" name="amount" type="number" placeholder="Enter Quantity of Units"/></td><br>
+                    <input id="quantity" name="quantity" type="number" placeholder="Enter Quantity of Units"/></td><br>
             <td><label class="labels">Units</label><br>
                     <select title="units" name="units" id="units" class="inputs">
                         <option class="options" value="">Select</option>
@@ -38,14 +38,14 @@
             <td><label class="labels">Price $</label><br>
                     <input id="price" type="number" min="1" step="any" placeholder="Enter Price (00.00)"/></td><br>
             <td><label class="labels">How many portions does quantity yield (optional)</label><br>
-            <input type="number" min="1" step="any" placeholder="Enter # of portions"/></td><br>
+            <input id="portions" type="number" min="1" step="any" placeholder="Enter # of portions"/></td><br>
             <td>
-               <button class="buttons" id="new-ingredient-button" type="button" onclick="addRow()">Add to Ingredients</button></td>
+               <button class="buttons" id="new-ingredient-button" type="button" onclick="addData()">Add to Ingredients</button></td>
         </form>
     </div>
     </tr>
 
-    <table id="main-ingredient-list" class="tables">
+    <table id="ingredientTable" class="tables">
         <thead>
             <tr>
                 <th>Ingredient Name</th>
@@ -55,11 +55,11 @@
                 <th>Portions</th>
             </tr>
         </thead>
-        <tbody>
-
+        <tbody id="ingredientData">
+<!--Add ingredient details input by user into this area with JS-->
         </tbody>
     </table>
 
-    <script src="script.js" defer></script>
+    <script src="script-ingredientList.js" defer></script>
 </body>
 </html>

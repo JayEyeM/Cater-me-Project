@@ -72,3 +72,27 @@ padding:2.5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
+input{ background-color:#DFFF99;
+border: 1.5px solid #99E0FF; 
+color:#061223;}
+
+select{ background-color:#DFFF99;
+  border: 1.5px solid #99E0FF; 
+  color:#061223;}
+
+.secondaryButton{border:1.5px solid #99E0FF;
+background-color:#061223;
+color:#DFFF99;}
+
+.secondaryButton:hover{border:1.5px solid #99E0FF;
+  background-color:#99E0FF;
+  color:#061223;}
+
+.delete-button{border:1.5px solid #99E0FF;
+  background-color: #EE6D71;
+  color: #061223;}
+
+.delete-button:hover{border:1.5px solid #99E0FF;
+    background-color:#f89699;
+    color:#061223;}

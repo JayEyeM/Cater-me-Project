@@ -16,23 +16,23 @@
     
     <!--New Event Inputs-->
     <!--New event date-->
-    <label for="event-date" class="labels">Event Date:</label>
+    <label for="event-date" class="labels">Event Date:</label><br>
     <input id="event-date" type="date" class="inputs"></input><br>
 
     <!--New event time-->
-    <label for="event-time" class="labels">Event Time</label>
+    <label for="event-time" class="labels">Event Time</label><br>
     <input id="event-time" type="time" class="inputs"></input></form><br>
 
     <!--Event Location-->
-    <label for="event-location" class="labels" >Event Location</label>
+    <label for="event-location" class="labels" >Event Location</label><br>
     <input id="event-location" type="text" placeholder="Enter Location"></input><br>
 
     <!--Number of people attending event-->
-    <label for="num-of-attendees" class="labels"># of attendees</label>
+    <label for="num-of-attendees" class="labels"># of attendees</label><br>
     <input id="num-of-attendees" type="number" class="inputs" placeholder="Enter # of attendees"></input><br>
 
     <!--Choose from Ingredient list-->
-    <label for="addEventIngredients" class="labels">Add Ingredients to Event </label>
+    <label for="addEventIngredients" class="labels">Add Ingredients to Event </label><br>
     
         <input type="text" id="ingredientSearch" placeholder="Search Main Ingredient List" oninput="filterIngredients()">
         <label class="labels">Or </label>
@@ -40,10 +40,20 @@
                 <option>Select from Main Ingredient List</option>
                 <!--fill this with main inredient-list-item names-->
             </select>
+            <button class="secondaryButton" onclick="addIngredientToEvent()">Add Ingredient to Event</button><br>
     
-    <button onclick="addIngredientToEvent()">Add Ingredient to Event</button><br>
-    <button type="submit" class="buttons" id="new-event-button">Create Event</button>
+
+    <!--Other Expenses-->
+    <label class="labels" for="expenseLabel">Other Expenses:</label><br>
+    <input type="text" id="expenseLabel" placeholder="e.g., Gas">
+
+    <label class="labels" for="otherExpenseInput">Cost:</label>
+    <input type="number" id="otherExpenseInput" min="0" placeholder="00.00">
+
+    <button class="secondaryButton" type="button" onclick="addExpense()">Add Expense</button><br>
  </form>
+
+    <button type="submit" class="buttons" id="new-event-button">Create Event</button>
 
  <!--list of ingredients added from the main ingredient list that are specific to event being created-->
  <table id="event-ingredient-list" class="tables">
@@ -52,7 +62,7 @@
             <th>Ingredient Name</th>
             <th>Quantity Needed</th>
             <th>Units</th>
-            <th>Price</th>
+            <th>Cost</th>
         </tr>
     </thead>
     <tbody>
@@ -74,7 +84,7 @@
     </tbody>
 </table>
     
-    <script src="script.js" defer></script>
+    <script src="script-newEvent.js" defer></script>
 
 </body>
 </html>
