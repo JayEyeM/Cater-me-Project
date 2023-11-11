@@ -1,0 +1,74 @@
+
+body {background-color: #061223;
+    font-family: Arial, sans-serif;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #DFFF99;
+}
+
+h2{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:#FFDA85;}
+
+h3{color: white;}
+
+.buttons{border: 2.5px solid #DFFF99;
+background-color: #99E0FF;
+font-size: 1.2rem;
+margin:5px;}
+
+.buttons:hover {
+    background-color: #DFFF99;
+border:2.5px solid #99E0FF;
+font-size: 1.2rem;
+margin:5px;}
+
+.homeButton{border: 2.5px solid #EE6D71;
+  background-color: #061223;
+  font-size: 1.2rem;
+  margin:5px;
+color:#DFFF99;}
+
+.homeButton:hover{
+  background-color: #EE6D71;
+border:2.5px solid #DFFF99;
+font-size: 1.2rem;
+margin:5px;}
+
+.labels{color:#99E0FF;}
+
+/*Add New ingredient to Ingredient List*/
+
+.tables{background-color: #FFDA85;
+border: 2.5px solid #99E0FF;
+padding:2.5px;
+margin:2.5px;}
+
+td, tr {border-bottom: 2px solid black;
+    border-top: 2px solid black;}
+
+th{font-weight: bold;
+font-size: 1.2rem;
+border:#EE6D71 solid 2.5px;
+padding:2.5px;
+}
+
+/*styles for add ingredients to New Event*/
+
+/* Add your styles here */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownIngredients {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}

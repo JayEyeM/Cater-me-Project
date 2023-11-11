@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Event Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>New Event</h2>
+    <a href="index.html">
+        <button class="homeButton">Home Page</button> 
+    </a><br>
+ <form id="New-Event">
+    
+    
+    <!--New Event Inputs-->
+    <!--New event date-->
+    <label for="event-date" class="labels">Event Date:</label>
+    <input id="event-date" type="date" class="inputs"></input><br>
+
+    <!--New event time-->
+    <label for="event-time" class="labels">Event Time</label>
+    <input id="event-time" type="time" class="inputs"></input></form><br>
+
+    <!--Event Location-->
+    <label for="event-location" class="labels" >Event Location</label>
+    <input id="event-location" type="text" placeholder="Enter Location"></input><br>
+
+    <!--Number of people attending event-->
+    <label for="num-of-attendees" class="labels"># of attendees</label>
+    <input id="num-of-attendees" type="number" class="inputs" placeholder="Enter # of attendees"></input><br>
+
+    <!--Choose from Ingredient list-->
+    <label for="addEventIngredients" class="labels">Add Ingredients to Event </label>
+    
+        <input type="text" id="ingredientSearch" placeholder="Search Main Ingredient List" oninput="filterIngredients()">
+        <label class="labels">Or </label>
+            <select title="units" name="units" id="units" class="inputs">
+                <option>Select from Main Ingredient List</option>
+                <!--fill this with main inredient-list-item names-->
+            </select>
+    
+    <button onclick="addIngredientToEvent()">Add Ingredient to Event</button><br>
+    <button type="submit" class="buttons" id="new-event-button">Create Event</button>
+ </form>
+
+ <!--list of ingredients added from the main ingredient list that are specific to event being created-->
+ <table id="event-ingredient-list" class="tables">
+    <thead>
+        <tr>
+            <th>Ingredient Name</th>
+            <th>Quantity Needed</th>
+            <th>Units</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<table id="event-cost-details" class="tables">
+    <thead>
+        <tr>
+            <th>Total Ingredient cost</th>
+            <th>Other Expenses Cost</th>
+            <th>Customer Cost</th>
+            <th>Expected Profit</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+    
+    <script src="script.js" defer></script>
+
+</body>
+</html>

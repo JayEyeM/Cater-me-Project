@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Event Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Ingredient List</h2>
+    <a href="index.html">
+    <button class="homeButton">Home Page</button> 
+</a>
+    <div id="ingredient-form-div">
+        <form id=person method=post action='/your_page_on_server'>
+    <tr><h3>Add New Ingredient</h3>
+        
+            <td><label class="labels">Ingredient Name</label><br>
+                    <input id="ingredientName" name="ingredient-name" placeholder="Enter Ingredient Name"/></td><br>
+            <td><label class="labels">Quantity</label><br>
+                    <input id="amount" name="amount" type="number" placeholder="Enter Quantity of Units"/></td><br>
+            <td><label class="labels">Units</label><br>
+                    <select title="units" name="units" id="units" class="inputs">
+                        <option class="options" value="">Select</option>
+                        <option class="options" value="lbs">lbs</option>
+                        <option class="options" value="kg">kg</option>
+                        <option class="options" value="grams">grams</option>
+                        <option class="options" value="ounces">ounces</option>
+                        <option class="options" value="fluid ounces">fluid ounces</option>
+                        <option class="options" value="cups">cups</option>
+                        <option class="options" value="tablespoon">tbsp</option>
+                        <option class="options" value="tsp">tsp</option>
+                        <option class="options" value="pieces">pieces</option>
+                        <option class="options" value="box">box</option>
+                        <option class="options" value="bags">bags</option>
+                        <option class="options" value="bottles">bottles</option>
+                    </select></td><br>
+            <td><label class="labels">Price $</label><br>
+                    <input id="price" type="number" min="1" step="any" placeholder="Enter Price (00.00)"/></td><br>
+            <td><label class="labels">How many portions does quantity yield (optional)</label><br>
+            <input type="number" min="1" step="any" placeholder="Enter # of portions"/></td><br>
+            <td>
+               <button class="buttons" id="new-ingredient-button" type="button" onclick="addRow()">Add to Ingredients</button></td>
+        </form>
+    </div>
+    </tr>
+
+    <table id="main-ingredient-list" class="tables">
+        <thead>
+            <tr>
+                <th>Ingredient Name</th>
+                <th>Quantity</th>
+                <th>Units</th>
+                <th>Price</th>
+                <th>Portions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
